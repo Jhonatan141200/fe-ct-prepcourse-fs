@@ -152,14 +152,9 @@ function esPrimo(num) {
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
    let count = 0;
-   for (let i = 1 ; i <= num ; i++) {
-      if (num % i === 0) {
-         count++;
-      }
-   }
-   return (count === 2) ? true : false;
-   
-
+   for (let i = 1 ; i <= num ; i++)
+      if (num % i === 0) count++;   
+   return (count === 2) ? true : false; 
 }
 
 function esVerdadero(valor) {
